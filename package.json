@@ -1,0 +1,14 @@
+{
+  "name": "computer-engineering",
+  "version": "1.0.0",
+  "description": "Website for Computer Engineering Course",
+  "main": "public/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sunnie Kapar & Mathtew Liu",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}
