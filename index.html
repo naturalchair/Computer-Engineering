@@ -14,15 +14,15 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-light navbar-light py-3">
+    <nav class="navbar navbar-expand-lg bg-light navbar-light py-4 sticky-top" style="backdrop-filter: blur(4px); --bs-bg-opacity: .85;">
         <div class="container">
-            <a href="#" class="navbar-brand">Comp<span class="text-success">Eng</span></a>
+            <a href="#" class="navbar-brand"><h4>Comp<span class="text-success">Eng</span></h4></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="nav-menu">
-                <ul class="navbar-nav ms-auto">                  
-                    <li class="nav-item dropdown">
+                <ul class="navbar-nav ms-auto gap-4">                  
+                    <li class="nav-item dropdown" >
                         <a class="nav-link dropdown-toggle" href="#resources" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Resources
@@ -40,10 +40,51 @@
                     <li class="nav-item">
                         <a href="#about-us" class="nav-link">About Us</a>
                     </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-outline-success rounded-4" data-bs-toggle="modal" data-bs-target="#contactModal">
+                            Contact Us
+                          </button>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <div class="modal fade" id="contactModal">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header mx-3">
+                <h5 class="modal-title">Contact Us</h5>
+                <button type="button" class="btn-close" aria-label="Close" data-bs-dismiss="modal"></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                    <div class="form-group row mb-2">
+                        <div class="col-md-6">
+                            <label for="recipient-name" class="col--form-label">First Name</label>
+                            <input type="text" class="form-control" id="recipient-name" placeholder="Your First Name">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="recipient-name" class="col--form-label">Last Name</label>
+                            <input type="text" class="form-control" id="recipient-name" placeholder="Your Last Name">
+                        </div>
+                    </div>
+                  <div class="form-group mb-2">
+                    <label for="recipient-name" class="col-form-label">Email:</label>
+                    <input type="text" class="form-control" id="recipient-name" placeholder="Your Email">
+                  </div>
+                  <div class="form-group">
+                    <label for="message-text" class="col-form-label" style="max-height: 200px;">Message:</label>
+                    <textarea name="Message" rows="7" maxlength="3000" placeholder="Your Message" required="" class="form-control" style="resize: none;"></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer justify-content-center mx-3">
+                <button type="button" class="btn btn-success">Send Email</button>
+              </div>
+            </div>
+          </div>
+      </div>
 
     <header class="bg-light text-dark p-5 text-center text-md-start">
         <div class="container">
@@ -66,11 +107,11 @@
                     <div class="row gy-4">
                         <!-- Large Column -->
                         <div class="col-lg-8">
-                            <div class="bg-light rounded-3 p-5">
+                            <div class="d-flex align-items-center bg-light rounded-3 gy-3 p-5" style="height:250px">
                                 <div class="d-flex align-items-end gap-5">
                                     <div>
                                         <h3>Lorem.</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At, eum.</p>
+                                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, eum.</p>
                                     </div>
                                     <button class="h-25 btn btn-outline-success my-3 ">></button>
                                 </div>
@@ -78,19 +119,19 @@
                         </div>
                         <!-- Small Column -->
                         <div class="col-lg-4 col-sm-6">
-                            <div class="text-center bg-light rounded-3 p-5 h-100">
+                            <div class="d-flex align-items-center justify-content-center bg-light rounded-3 p-5 h-100 " style="height:250px">
                                 <h3>Lorem.</h3>
                             </div>
                         </div>
                        <!-- Small Column -->
                         <div class="col-lg-4 col-sm-6">
-                            <div class="text-center bg-light rounded-3 p-5 h-100">
-                                <h3 class="h-100">Druiven Box</h3>
+                            <div class="d-flex align-items-center justify-content-center bg-light rounded-3 p-5 h-100" style="height:250px">
+                                <h3>Druiven Box</h3>
                             </div>
                         </div>
                         <!-- Large Column -->
                         <div class="col-lg-8">
-                            <div class="bg-light rounded-3 gy-3 p-5">
+                            <div class="d-flex align-items-center bg-light rounded-3 gy-3 p-5" style="height:250px">
                                 <div class="d-flex align-items-end gap-5">
                                     <div>
                                         <h3>Lorem.</h3>
@@ -105,8 +146,8 @@
                 </div>
                 <!-- Side Column -->
                 <div class="col-lg-3">
-                    <div class="bg-success">
-                        <img src="https://picsum.photos/1000" class="object-fit-cover rounded opacity-25">
+                    <div class="bg-success h-100 rounded-3">
+                        <img src="https://picsum.photos/500/500" class="object-fit-cover border rounded" alt="...">
                     </div>
                 </div>
             </div>
