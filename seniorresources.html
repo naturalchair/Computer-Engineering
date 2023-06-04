@@ -17,7 +17,7 @@
     <nav class="navbar navbar-expand-lg bg-light navbar-light py-4 sticky-top"
         style="backdrop-filter: blur(4px); --bs-bg-opacity: .85;">
         <div class="container">
-            <a href="#" class="navbar-brand">
+            <a href="index.html" class="navbar-brand">
                 <h4>Comp<span class="text-success">Eng</span></h4>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu">
@@ -41,7 +41,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a href="#about-us" class="nav-link">About Us</a>
+                        <a href="index.html#about-us" class="nav-link">About Us</a>
                     </li>
                     <li class="nav-item">
                         <button type="button" class="btn btn-outline-success rounded-4" data-bs-toggle="modal"
@@ -93,115 +93,44 @@
         </div>
     </div>
 
-    <header class="bg-light text-dark p-5 text-center text-md-start">
-        <div class="container">
-            <div class="d-sm-flex align-content-center justify-content-between">
-                <div class="my-auto">
-                    <h1>Welcome to Computer<span class="text-success"> Engineering </span></h1>
-                    <h2 class="lead my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, minus.</h2>
-                </div>
-                <img class="img-fluid w-25 d-none d-md-block" src="/images/cksslogo.png" alt="CKSS Logo">
-            </div>
+    <header class="p-5">
+        <div class="container border-bottom py-3">
+            <h1>Lorem.</h1>
         </div>
     </header>
-
-    <section class="p-5" id="resources">
+    <section class="mb-5">
         <div class="container">
-            <h2 class="text-center my-5">Resources</h2>
-            <div class="row gy-4">
-                <!-- Main Column -->
-                <div class="col-lg-9">
-                    <div class="row gy-4">
-                        <!-- Large Column -->
-                        <div class="col-lg-8">
-                            <div class="d-flex align-items-center bg-light rounded-3 gy-3 p-5" style="min-height:250px">
-                                <div class="d-flex align-items-end gap-5">
-                                    <div>
-                                        <h3>Lorem.</h3>
-                                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, eum.
-                                        </p>
-                                    </div>
-                                    <button class="h-25 btn btn-outline-success my-3 ">></button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Small Column -->
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="d-flex align-items-center justify-content-center bg-light rounded-3 p-5 h-100 "
-                                style="min-height:250px">
-                                <h3>Lorem.</h3>
-                            </div>
-                        </div>
-                        <!-- Small Column -->
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="d-flex align-items-center justify-content-center bg-light rounded-3 p-5 h-100"
-                                style="min-height:250px">
-                                <h3>Druiven Box</h3>
-                            </div>
-                        </div>
-                        <!-- Large Column -->
-                        <div class="col-lg-8">
-                            <div class="d-flex align-items-center bg-light rounded-3 gy-3 p-5" style="min-height:250px">
-                                <div class="d-flex align-items-end gap-5">
-                                    <div>
-                                        <h3>Lorem.</h3>
-                                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. At, eum.
-                                        </p>
-                                    </div>
-                                    <button class="h-25 btn btn-outline-success my-3 ">></button>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <!-- Side Column -->
+            <div class="row">
                 <div class="col-lg-3">
-                    <img src="https://picsum.photos/1000"
-                        class="object-fit-cover h-100 rounded-3 img-thumbnail border-0" alt="...">
+                    <ul class="list-unstyled accordion">
+                        <!-- Each list item is a different unit -->
+                        <!-- Change ID name when copying and pasting a new list item -->
+                        <li class="mb-3 accodrion-item">
+                            <div class="accordion-header">
+                                <button class="accordion-button p-0 bg-transparent text-dark shadow-none collapsed"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#itemOne"
+                                    aria-expanded="false" aria-controls="itemOne">
+                                    <h3>Lorem.</h3>
+                                </button>
+                            </div>
+                            <!-- Holds all the lessons of a given unit -->
+                            <div id="itemOne" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingOne">
+                                <div class="accordion-body">
+                                    <!-- Each button will display a different PDF for each lesson -->
+                                    <button class="btn text-dark px-4 py-3 shadow-sm d-flex" type="button">
+                                        <i class="bi bi-file-earmark-text-fill text-success h4 me-3 "></i>
+                                        <h4 class="mb-0 me-5 "> Lorem </h4>
+                                        <i class="bi bi-arrow-right-short text-success h4 "></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="p-5 mb-5" id="about-us">
-        <div class="container">
-            <h2 class="text-center my-5">About Us</h2>
-            <div class="row text-center gap-5">
-                <div class="col-md">
-                    <div class="card bg-success text-light p-5">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-4"><i class="bi bi-tools"></i></div>
-                            <h3 class="card-title mb-4">Lorem.</h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum error voluptatibus
-                                a explicabo expedita ipsum?
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card bg-secondary text-light p-5">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-4"><i class="bi bi-laptop"></i></div>
-                            <h3 class="card-title mb-4">Lorem.</h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum error voluptatibus
-                                a explicabo expedita ipsum?
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md">
-                    <div class="card bg-success text-light p-5">
-                        <div class="card-body text-center">
-                            <div class="h1 mb-4"><i class="bi bi-tools"></i></div>
-                            <h3 class="card-title mb-4">Lorem.</h3>
-                            <p class="card-text">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum error voluptatibus
-                                a explicabo expedita ipsum?
-                            </p>
-                        </div>
+                <div class="col-lg-9">
+                    <div class="ms-lg-5">
+                        <embed src="pdfs\sample.pdf#page=1&zoom=50" type="" width="100%" height="500px"><embed/>
                     </div>
                 </div>
             </div>
@@ -209,7 +138,7 @@
     </section>
 
     <footer
-        class="d-flex flex-wrap justify-content-md-between justify-content-center align-items-center py-3 my-4 container border-top text-center">
+        class="d-flex flex-wrap justify-content-md-between text-center justify-content-center align-items-center py-3 my-4 container border-top">
         <div class="col-md-8 d-flex align-items-center">
             <span class="mb-3 mb-md-0 text-muted">Made and designed by Sunnie Kapar and Matthew Liu</span>
         </div>
