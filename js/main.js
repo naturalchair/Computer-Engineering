@@ -1,9 +1,7 @@
 const pdfEmbed = document.querySelector(".pdf-embed");
 const contentButtons = Array.from(document.querySelectorAll(".content-btn"));
-console.log(contentButtons);
 contentButtons.forEach(element => {
     element.addEventListener("click", () => {
-        console.log(element.id);
         changePdf(element.id);
     });
 });
