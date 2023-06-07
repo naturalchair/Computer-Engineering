@@ -101,12 +101,12 @@
     <section class="mb-5">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3">
-                    <ul class="list-unstyled accordion">
+                <div class="col-lg-4">
+                    <ul class="list-unstyled accordion overflow-y-auto" style="height:750px;">
                         <!-- Each list item is a different unit -->
                         <!-- Change ID name when copying and pasting a new list item -->
                         <li class="mb-3 accodrion-item">
-                            <div class="accordion-header">
+                            <div class="py-3 accordion-header border-bottom">
                                 <button class="accordion-button p-0 bg-transparent text-dark shadow-none collapsed"
                                     type="button" data-bs-toggle="collapse" data-bs-target="#itemOne"
                                     aria-expanded="false" aria-controls="itemOne">
@@ -116,21 +116,61 @@
                             <!-- Holds all the lessons of a given unit -->
                             <div id="itemOne" class="accordion-collapse collapse"
                                 aria-labelledby="panelsStayOpen-headingOne">
+                                <ul class="accordion-body list-unstyled">
+                                    <!-- Each list item will display a different PDF for each lesson -->
+                                    <li>
+                                        <button class="content-btn btn text-dark px-4 py-3 shadow-sm d-flex align-items-center mb-3"
+                                            type="button" id="itemOnePDF">
+                                            <i class="bi bi-file-earmark-text-fill text-success h4 me-3 "></i>
+                                            <h4 class="mb-0 me-5 "> Lorem </h4>
+                                            <i class="bi bi-arrow-right-short text-success h4 "></i>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button class="content-btn btn text-dark px-4 py-3 shadow-sm d-flex align-items-center mb-3"
+                                            type="button" id="itemTwoPDF">
+                                            <i class="bi bi-file-earmark-text-fill text-success h4 me-3 "></i>
+                                            <h4 class="mb-0 me-5 "> Lorem </h4>
+                                            <i class="bi bi-arrow-right-short text-success h4 "></i>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="mb-3 accodrion-item">
+                            <div class="py-3 accordion-header border-bottom">
+                                <button class="accordion-button p-0 bg-transparent text-dark shadow-none collapsed"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#itemTwo"
+                                    aria-expanded="false" aria-controls="itemTwo">
+                                    <h3>Lorem.</h3>
+                                </button>
+                            </div>
+                            <!-- Holds all the lessons of a given unit -->
+                            <div id="itemTwo" class="accordion-collapse collapse"
+                                aria-labelledby="panelsStayOpen-headingOne">
                                 <div class="accordion-body">
                                     <!-- Each button will display a different PDF for each lesson -->
-                                    <button class="btn text-dark px-4 py-3 shadow-sm d-flex" type="button">
+                                    <button class="btn text-dark px-4 py-3 shadow-sm d-flex align-items-center mb-3"
+                                        type="button">
                                         <i class="bi bi-file-earmark-text-fill text-success h4 me-3 "></i>
                                         <h4 class="mb-0 me-5 "> Lorem </h4>
                                         <i class="bi bi-arrow-right-short text-success h4 "></i>
+                                    </button>
+                                    <button class="btn text-dark px-4 py-3 shadow-sm d-flex align-items-center mb-3"
+                                        type="button">
+                                        <i class="bi bi-file-earmark-text-fill text-success h4 me-3 "></i>
+                                        <h4 class="mb-0 me-5 "> Lorem </h4>
+                                        <i class="bi bi-arrow-right-short text-success h4"></i>
                                     </button>
                                 </div>
                             </div>
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-9">
+                <div class="col-lg-8">
                     <div class="ms-lg-5">
-                        <embed src="pdfs\sample.pdf#page=1&zoom=50" type="" width="100%" height="500px"><embed/>
+                        <embed src="pdfs/itemOnePDF.pdf#page=1&zoom=95" type="" width="100%" height="750px" class="pdf-embed"><embed/>
                     </div>
                 </div>
             </div>
@@ -153,6 +193,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
+        <script src="/js/main.js"></script>
 </body>
 
 </html>

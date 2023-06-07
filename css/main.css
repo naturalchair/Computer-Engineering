@@ -10825,6 +10825,7 @@ textarea.form-control-lg {
 
 .accordion-button::after {
   transform: rotate(-90deg) !important;
+  margin-left: 4rem;
 }
 
 .dropdown-item:active {
